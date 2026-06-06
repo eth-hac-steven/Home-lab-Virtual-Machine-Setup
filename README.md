@@ -16,7 +16,7 @@ This project provides:
 - Host machine with adequate resources (RAM, CPU, storage)
 - Basic knowledge of virtualization concepts
 
-## 🔧 VM Configurations
+## 🔧 VM Network Configurations
 
 [Add details about your VM setups here]
 
@@ -35,8 +35,12 @@ This project provides:
 
 Feel free to suggest improvements or additions to these configurations.
 
+## Virtual Machine Notes
+ - If you start a VM, then start another VM while both have the VDIs, the second on will crash.
+ - kernel issue on virtual box(kali)
 
 ## 📧 Contact
 
-For questions or issues, feel free to open an issue or contact me directly.
+- For questions or issues, feel free to open an issue or contact me directly.
+- Yes, tried VMware and had conflict issues.
 
