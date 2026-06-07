@@ -11,6 +11,9 @@
 - start your virtualbox
 - click on ```new```
 - Enter a VM name ```kali linux``` or whatever  you feel
+
+![Kali Installation Step 1](kali%20installation%20images/Kali-installation-step-1.png)
+
 - Change OS to ```Linux```
 - Change the OS distribution to ```Debian```
 - Click on sppecify virtual hard disk
@@ -19,8 +22,13 @@
 - Click on ```add```
 - Navigate to where the extacted kali-linux file is 
 - open and seeach for the vdi file
+
+![Kali Installation Step 2](kali%20installation%20images/kali-installation-step-2.png)
+
 - click on open 
 - then click on choose 
+
+![Kali Installation Step 3](kali%20installation%20images/kali-installation-step-3.png)
 
  With this  kali has been installed on virtual box.
 
