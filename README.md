@@ -13,6 +13,8 @@ This project provides:
 
 ### Prerequisites
 - VirtualBox installed and configured
+   - [Download it from here](https://www.virtualbox.org/wiki/Downloads)
+   - [Also get this(VC redist) just is case](https://aka.ms/vc14/vc_redist.x64.exe) 
 - Host machine with adequate resources (RAM, CPU, storage)
 - Basic knowledge of virtualization concepts
 
@@ -21,10 +23,11 @@ This project provides:
 [Add details about your VM setups here]
 
 ### Available VMs
-- [VM 1 Name] - [Purpose/Description]
-- [VM 2 Name] - [Purpose/Description]
-
-
+- Windows Server 2022 - ACtive Directory simulation and more
+- Pfsense firewall - to simulate an enterprise setup
+- Windows 11 cleint pc - For simulating help desk fix and running test
+- True Nas - For to simulate a centralize storage for users
+- kali linux - For a little bit of Purple teaming
 
 ## 💾 Backup & Recovery
 
