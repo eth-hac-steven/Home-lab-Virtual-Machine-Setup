@@ -11,11 +11,11 @@
 - start your virtualbox
 - click on ```new```
 - Enter a VM name ```kali linux``` or whatever  you feel
-
-![Kali Installation Step 1](kali%20installation%20images/Kali-installation-step-1.png)
-
 - Change OS to ```Linux```
 - Change the OS distribution to ```Debian```
+
+![Kali Installation Step 1](kali%20installation%20images/Kali-installation-step-1.png)
+  
 - Click on sppecify virtual hard disk
 - Select ```use an existing virtual hard disk```
 - Click on the ```folder``` on the right hand side of the screen
