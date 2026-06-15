@@ -14,6 +14,9 @@
 - click on ```Enter cart```
 - click on ```Checkout```
 - Create an Account
+- It free to get it 
+- Download the ISO.gz file
+- Extract the file
 
 ## Installation
 

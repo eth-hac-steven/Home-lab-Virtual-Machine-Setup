@@ -4,6 +4,8 @@ A comprehensive repository containing configurations, setup, and documentation f
 
 ---
 
+![Virtual-Box_VM](/vm-screen.png)
+
 ## 📋 Overview
 
 This project provides a complete home lab infrastructure setup with:
