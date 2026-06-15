@@ -40,9 +40,42 @@
 
    ### Specify virtual Hard disk
    
-   - Set disk size to 30gb or more
+   - Set disk size to 20gb or more
 
-
+![Virtual hard disk](/PFsense%20Firewall%20Installation/images/base-memory.png)
 
 - Click on finish,You should see the VM
+- Click on settings
+
+![click-on-setting](/PFsense%20Firewall%20Installation/images/click-on-settings.png)
+
+- click on Network
+- click on Adapter 2
+
+![Network-adpater](/PFsense%20Firewall%20Installation/images/Screenshot%202026-06-15%20195108.png)
+
+- change the ```Attached to ``` Internal Network
+- Enter a name of Choice or stick to Default
+
+![etwork](/PFsense%20Firewall%20Installation/images/internal%20network.png)
+
+- click on okay
 - click on start
+
+### Set-up 
+ After starting the machine should see the this page
+
+ ![netgate-installer](/PFsense%20Firewall%20Installation/images/Netgate-installer.png)
+
+- Click Accept
+
+![Welcome](/PFsense%20Firewall%20Installation/images/welcome-page.png)
+
+- Select install
+- Clck ok
+
+![click-on-okay](/PFsense%20Firewall%20Installation/images/click-ok.png)
+
+- click ok
+
+
