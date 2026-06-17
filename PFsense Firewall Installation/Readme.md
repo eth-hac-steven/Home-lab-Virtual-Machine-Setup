@@ -49,13 +49,15 @@
 
 ![click-on-setting](/PFsense%20Firewall%20Installation/images/click-on-settings.png)
 
-- click on Network
-- click on Adapter 2
+- click on ```Network```
+- click on ```Adapter 2```
+- click on ```Enable Network Adapter```
 
 ![Network-adpater](/PFsense%20Firewall%20Installation/images/Screenshot%202026-06-15%20195108.png)
 
 - change the ```Attached to ``` Internal Network
-- Enter a name of Choice or stick to Default
+  - This Internal network act as layer 2 switch for the device that will be on this network.
+- Enter a name of Choice or stick to the Default.
 
 ![etwork](/PFsense%20Firewall%20Installation/images/internal%20network.png)
 
@@ -78,4 +80,88 @@
 
 - click ok
 
+### Selecing a WAN interface 
+  A WAN(wide Area Netowrk) interface is required to be able to recieve and send .
 
+- select ```em0```
+- click ok
+
+![em0-interface](/PFsense%20Firewall%20Installation/images/em0-interface.png)
+
+### WAN network Setup 
+
+![WAN network Setup ](image.png)
+ Leave as Default 
+ - click ok
+
+ - ***interface mode : DCHP(client)*** : This was set because to the ISP aka my Router assigns IP dynamically , if set to static this would cause a collision  in the future.
+     
+
+### Selecing a WAN interface 
+  The LAN(Local Area Netowrk) interface is required  for System on the internal Network to be able to access the internet.
+
+![LAN network Setup ](image-2.png)
+
+- Select ```em1``` 
+- click  ok
+
+### LAN network Setup 
+
+- Leave as default 
+  - You can change any options by Selecting and hit enter
+- I change the DHCP range, you can still leave as default.
+- click ok
+
+![LAN network Setup](image-3.png)
+
+Click continue
+
+![alt text](image-4.png)
+
+You should see a popup about trying to connect,if you have internet connection this should not take long , if not it might fail.
+
+![alt text](image-13.png)
+
+### Next
+
+![alt text](image-5.png)
+
+- Select ```install CE```
+- Hit Enter
+
+### Selecting File System
+
+![alt text](image-6.png)
+
+- Leave As Default
+- select OK
+- hit Enter
+
+![alt text](image-7.png)
+
+- select OK
+- hit Enter
+
+![alt text](image-8.png)
+
+- select OK
+- hit Enter
+
+![alt text](image-9.png)
+
+- select OK
+- Hit Enter
+
+![alt text](image-10.png)
+
+### Stable Version Selection
+
+![alt text](image-11.png)
+
+- select OK
+- Hit Enter
+
+![alt text](image-12.png)
+
+Installation started, wait for it to be completed
+ - Have a good internet connection to avoid failures, which wil cause you to start again.
