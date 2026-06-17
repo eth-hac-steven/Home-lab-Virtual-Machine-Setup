@@ -14,7 +14,7 @@
 - click on ```Enter cart```
 - click on ```Checkout```
 - Create an Account
-- It free to get it 
+- Its free to get it 
 - Download the ISO.gz file
 - Extract the file
 
@@ -90,7 +90,7 @@
 
 ### WAN network Setup 
 
-![WAN network Setup ](image.png)
+![WAN network Setup](/PFsense%20Firewall%20Installation/images/image.png)
  Leave as Default 
  - click ok
 
@@ -100,7 +100,7 @@
 ### Selecing a WAN interface 
   The LAN(Local Area Netowrk) interface is required  for System on the internal Network to be able to access the internet.
 
-![LAN network Setup ](image-2.png)
+![LAN network Setup ](/PFsense%20Firewall%20Installation/images/image-2.png)
 
 - Select ```em1``` 
 - click  ok
@@ -112,56 +112,89 @@
 - I change the DHCP range, you can still leave as default.
 - click ok
 
-![LAN network Setup](image-3.png)
+![LAN network Setup](/PFsense%20Firewall%20Installation/images/image-3.png)
 
 Click continue
 
-![alt text](image-4.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-4.png)
 
 You should see a popup about trying to connect,if you have internet connection this should not take long , if not it might fail.
 
-![alt text](image-13.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-13.png)
 
 ### Next
 
-![alt text](image-5.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-5.png)
 
 - Select ```install CE```
 - Hit Enter
 
 ### Selecting File System
 
-![alt text](image-6.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-6.png)
 
 - Leave As Default
 - select OK
 - hit Enter
 
-![alt text](image-7.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-7.png)
 
 - select OK
 - hit Enter
 
-![alt text](image-8.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-8.png)
 
 - select OK
 - hit Enter
 
-![alt text](image-9.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-9.png)
 
 - select OK
 - Hit Enter
 
-![alt text](image-10.png)
+![alt text](/PFsense%20Firewall%20Installation/images/image-10.png)
 
 ### Stable Version Selection
 
-![alt text](image-11.png)
+![stable-version](/PFsense%20Firewall%20Installation/images/image-11.png)
 
 - select OK
 - Hit Enter
 
-![alt text](image-12.png)
+![installation-begins](/PFsense%20Firewall%20Installation/images/image-12.png)
 
 Installation started, wait for it to be completed
- - Have a good internet connection to avoid failures, which wil cause you to start again.
+ - Have a good internet connection to avoid failures, which will cause you to start again.
+
+***serval minutes later*** yes, i did not have good network(internet connection) :).
+
+![Installation-complete](/PFsense%20Firewall%20Installation/images/image14.png)
+
+- select ok
+- Hit Enter
+
+![another-step](/PFsense%20Firewall%20Installation/images/image-15.png)
+
+ This step is very important we are going to remove the iso , if we do not  the set up process will repeat each time you start the machine
+
+ and here is how 
+
+- Right  the disc as shown below
+
+![removing-the-iso](/PFsense%20Firewall%20Installation/images/image-16.png)
+
+- uncheck the ```Netgate-installer....iso
+
+which should show you this 
+
+![force-unmount-iso](/PFsense%20Firewall%20Installation/images/image-17.png)
+
+- click ```Force unmount```
+-  Select ```Reboot```
+- Hit Enter
+- or shut the machine down the restart it.
+
+### Done
+ 
+![set-up complete](/PFsense%20Firewall%20Installation/images/image-18.png)
+
