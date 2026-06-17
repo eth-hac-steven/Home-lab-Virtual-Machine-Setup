@@ -1,7 +1,7 @@
 
 # TrueNas Installation
 
-![TrueNas](image-4.png)
+![TrueNas](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-4.png)
 
 ### Description
    True-NAS(Network attached storage) is a centralized storage medium that allows use to be able to share and store files on the network.
