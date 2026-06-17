@@ -43,7 +43,7 @@ i will be installing from OSboxes
    - Click on the ```folder``` on the right hand side of the screen
    - Click on ```add```
 
-![Virtual hard disk](Existing-vdi.png)
+![Virtual hard disk](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/Existing-vdi.png)
 
 
 - Navigate to where the extacted  True Nas file is 
@@ -51,19 +51,19 @@ i will be installing from OSboxes
 - click on choose
 
 
-![click-on-setting](image-1.png)
+![click-on-setting](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-1.png)
 
 - Click on finish,You should see the VM
 - Click on settings
 
-![finished-vm](image-2.png)
+![finished-vm](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-2.png)
 
 - click on ```Network```
 - click on ```Adapter 1```
 - change the ```Attached to ``` Internal Network
 - Enter the name of the same internal network in PFsense.
 
-![Network-adpater](image-3.png)
+![Network-adpater](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-3.png)
 
 
 - click on okay
@@ -71,6 +71,6 @@ i will be installing from OSboxes
 
 ### Done
 
-![installation-complete](image-5.png)
+![installation-complete](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-5.png)
 
 - To access this NAS use a systein the same internal network.
