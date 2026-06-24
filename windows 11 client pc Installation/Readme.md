@@ -46,7 +46,7 @@ The window 11 client system is a very important vm for this homelab, as it allow
 
 ![starting-the-machine](/windows%2011%20client%20pc%20Installation/images/starting-the-machine.png)
 
--While the machine is starting make sure to pay attention and ```press any key to boot into the CD or dvd```
+-While the machine is starting make sure to pay attention and ```PRESS ANY KEY TO BOOT INTO CD OR DVD```
 
 ### Windows 11 setup
 
