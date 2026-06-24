@@ -5,7 +5,7 @@ The window server 2022  is an important part of this Home lab , this help to sim
 
 ## Requirements
 
-- [Windows server 2022 iso](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
+- [Windows server 2022 iso](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
    - Download the LTSC version
 
 
@@ -19,9 +19,9 @@ The window server 2022  is an important part of this Home lab , this help to sim
 
    ### Virtual Machine Name and OS
    
-   - Enter the name for Virtual machine e.g ***Win 11*** 
+   - Enter the name for Virtual machine e.g ***Win-Serv-2022*** 
    - Leave VM folder as the defaults
-   - ISO image : Navigate to where the Win 11 iso was downloaded to
+   - ISO image : Navigate to where the Win-Serv-2022 was downloaded to
    - uncheck unintended install
    
    
@@ -29,7 +29,7 @@ The window server 2022  is an important part of this Home lab , this help to sim
 
    ### Specify Virtual Hardware
    
-   - Set the base memory (RAM) to 4gb
+   - Set the base memory (RAM) to 6gb
    - Set the CPU to 2 cores
    
 ![vm-memory](/windows%2011%20client%20pc%20Installation/images/vm-memory.png)
