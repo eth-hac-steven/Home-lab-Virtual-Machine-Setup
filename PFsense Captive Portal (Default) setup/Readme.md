@@ -143,4 +143,4 @@ With all that done you should see this appear in  your browser
 ![success-login](./images/success-login.png)  
 
  #### Note 
- This is the Default captive portal on pfsense, it does the job but its not custom,[check here]([www.google.com](https://github.com/eth-hac-steven/Fortify-Continuum-Network-infrastructure/tree/main/Fortify%20Continuum%20Captive-Portal)) for a custom setup.
+ This is the Default captive portal on pfsense, it does the job but its not custom,[check here](https://github.com/eth-hac-steven/Fortify-Continuum-Network-infrastructure/tree/main/Fortify%20Continuum%20Captive-Portal) for a custom setup.
