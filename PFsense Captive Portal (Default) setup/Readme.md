@@ -140,8 +140,7 @@ With all that done you should see this appear in  your browser
  - selct the zone
  - you see who is logged in 
 
+![success-login](./images/success-login.png)  
+
  #### Note 
  This is the Default captive portal on pfsense, it does the job but its not custom,[check here](www.google.com) for a custom setup.
-
-
-![success-login](./images/success-login.png)  
