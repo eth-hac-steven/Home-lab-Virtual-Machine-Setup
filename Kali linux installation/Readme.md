@@ -37,5 +37,5 @@
 
  OR 
 
- After extracing the  kali-linux file , then double clikc the the Vdi file  and kali should  open in virtual box if installed :).
+ After extracing the  kali-linux file , then double click the the Vdi file  and kali should  open in virtual box as if installed very easy :).
 
