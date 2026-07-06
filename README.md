@@ -34,6 +34,7 @@ Before setting up your home lab, ensure you have:
 - **Knowledge Requirements**
   - Basic understanding of virtualization concepts
   - Familiarity with Windows/Linux administration (helpful but not required)
+  - The difference between the network adapter in virtaulbox
 
 ---
 
@@ -51,7 +52,8 @@ Detailed network configurations for inter-VM communication, external connectivit
 | **pfSense Firewall** | BSD-based | Enterprise firewall & network gateway simulation | ✅ Configured |
 | **Windows 11 Client** | Windows 11 | Help desk scenarios, troubleshooting, testing | ✅ Configured |
 | **TrueNAS** | FreeBSD | Centralized storage & file server for lab users | ✅ Configured |
-| **Kali Linux** | Linux | Purple team exercises & security testing | ⚠️ See Notes |
+| **Kali Linux** | Linux | Purple team exercises & security testing | ✅ Configured |
+| **Windows XP** | windows | Target machine | Working on it |
 
 ---
 
@@ -81,7 +83,7 @@ A snapshot captures the exact state of a virtual machine at a specific point in 
 |-------|----------|
 | **Multiple VMs won't start simultaneously** | If you start a VM, then attempt to start another VM while both share the same VDI, the second VM will crash. Use separate VDI copies for each VM instance. |
 | **Kali Linux kernel issues** | There's a known kernel compatibility issue with Kali Linux on VirtualBox. Update to the latest Kali ISO or check the [Kali Linux documentation](https://www.kali.org/) for patches. |
-| **VMware compatibility** | Tested VMware but experienced significant conflicts—VirtualBox is the recommended platform for this lab. |
+| **VMware compatibility** | Tested VMware but experienced significant conflicts while VirtualBox was installed, pick one platform for this lab. |
 
 ---
 
@@ -112,4 +114,4 @@ Found improvements or have suggestions? Feel free to:
 
 ---
 
-**Last Updated:** June 2026 | **Status:** Active Development ✨
+**Last Updated:** July 2026 | **Status:** Active Development ✨
