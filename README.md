@@ -6,14 +6,26 @@ A comprehensive set of step-by-step guides, screenshots, and tips to help beginn
 
 ![Virtual-Box_VM](/vm-screen.png)
 
+## Table of Contents
+
+- Quick Start
+- Available VM Guides
+  - pfSense Firewall Installation
+  - pfSense Captive Portal (Default)
+  - TrueNAS Installation (Network Attached Storage)
+  - Kali Linux Installation
+  - Windows Server 2022
+  - Windows 11 Client
+- Contributing
+
 ## Quick Start (for absolute beginners)
 
 Follow these minimal steps to get one VM running from a fresh machine:
 
 1. Install VirtualBox:
    - Windows/macOS/Linux: download and install from https://www.virtualbox.org/wiki/Downloads
-   - On Windows, after installing VirtualBox also install the Visual C++ Redistributable (VC++ 2015-2019/2022) if prompted: https://aka.ms/vs/17/release/vc_redist.x64.exe
-2. Pick a VM guide in this repository (for example `PFsense Firewall Installation/Readme.md`) and download the referenced ISO or VDI file from the links in that guide.
+   - On Windows, after installing VirtualBox also install the Visual C++ Redistributable (VC++ 2015-2022) if prompted: https://aka.ms/vs/17/release/vc_redist.x64.exe
+2. Pick a VM guide in this repository (for example `pfsense-firewall-installation/README.md`) and download the referenced ISO or VDI file from the links in that guide.
 3. In VirtualBox:
    - To import an appliance (OVA/OVF): File → Import Appliance → select the file and follow the prompts.
    - To create a new VM and attach an ISO/VDI: New → give it a name → set OS type → create or choose existing virtual disk (use the guide's recommended settings).
@@ -23,34 +35,14 @@ If you get stuck, open an issue describing the step you were on and paste the er
 
 ---
 
-## 📋 Overview
+## Available VM Guides
 
-This project provides a complete home lab infrastructure setup with:
-
-- ✅ VM Configuration Templates - Pre-configured settings and best practices for VirtualBox virtual machines
-- ✅ System Configurations - Network, storage, and performance tuning guides
-- ✅ Documentation - Step-by-step setup guides and troubleshooting resources
-
----
-
-## 🧰 Prerequisites (short)
-
-- VirtualBox (latest version recommended)
-- Host machine: minimum 16GB RAM recommended for multiple VMs; SSD recommended for VM storage.
-- Basic willingness to follow step-by-step instructions. No coding experience required.
-
----
-
-## Available Virtual Machines
-
-| VM Name | OS | Purpose | Status |
-|---------|-----|---------|--------|
-| **Windows Server 2022** | Windows Server | Active Directory simulation & enterprise domain setup | ✅ Configured |
-| **pfSense Firewall** | BSD-based | Enterprise firewall & network gateway simulation | ✅ Configured |
-| **Windows 11 Client** | Windows 11 | Help desk scenarios, troubleshooting, testing | ✅ Configured |
-| **TrueNAS** | FreeBSD | Centralized storage & file server for lab users | ✅ Configured |
-| **Kali Linux** | Linux | Purple team exercises & security testing | ✅ Configured |
-| **Windows XP** | Windows (legacy) | Target machine | Work in progress |
+- pfSense Firewall: pfsense-firewall-installation/README.md
+- pfSense Captive Portal: pfsense-captive-portal/README.md
+- TrueNAS: truenas-installation/README.md
+- Kali Linux: kali-linux-installation/README.md
+- Windows Server 2022: windows-server-2022-installation/README.md
+- Windows 11 Client: windows-11-client-installation/README.md
 
 ---
 
