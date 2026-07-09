@@ -23,24 +23,25 @@ Windows Server 2022 is an important part of this home lab. It helps simulate an 
 - Select the Windows Server 2022 ISO you downloaded.
 - Leave unattended install unchecked unless you specifically want it enabled.
 
-![VM name](/windows%2011%20client%20pc%20Installation/images/vm-name.png)
+![VM name](/Windows%20Server%202022%20Installation/images/win-server-vm-name.png)
 
 ### Specify Virtual Hardware
 
 - Set the base memory (RAM) to 6 GB.
 - Set the CPU to 2 cores.
 
-![VM memory](/windows%2011%20client%20pc%20Installation/images/vm-memory.png)
+
+![Starting the machine](/Windows%20Server%202022%20Installation/images/win-server-ram.png)
 
 ### Specify Virtual Hard Disk
 
 - Set the disk size to 80 GB or more.
 
-![VDI configuration](/windows%2011%20client%20pc%20Installation/images/VDi-customization.png)
+![VM name](/Windows%20Server%202022%20Installation/images/win-server-storage.png)
 
 - Click Finish. You should see the VM in the VirtualBox manager.
 - Click Start.
 
-![Starting the machine](/windows%2011%20client%20pc%20Installation/images/starting-the-machine.png)
+
 
 - While the machine is starting, pay attention and press any key to boot from the CD/DVD.
