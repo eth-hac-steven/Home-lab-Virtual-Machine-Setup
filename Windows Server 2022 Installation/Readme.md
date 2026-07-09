@@ -1,48 +1,46 @@
 # Windows Server 2022 Installation
-## Description  
-  
-The window server 2022  is an important part of this Home lab , this help to simulate enterprise enviroment, The  Acitve directory is one of the many feature that we will be installing on this server
+
+## Description
+
+Windows Server 2022 is an important part of this home lab. It helps simulate an enterprise environment, and Active Directory is one of the many features you can install and test on this server.
 
 ## Requirements
 
-- [Windows server 2022 iso](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
-   - Download the LTSC version
-
+- [Windows Server 2022 ISO](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
+  - Download the LTSC version if needed.
 
 ## Installation
 
-- launch Virtual box
-- click on New
+1. Launch VirtualBox.
+2. Click New.
 
-![installation-begins](/windows%2011%20client%20pc%20Installation/images/launch-virtual-box.png)
+![Launch VirtualBox](/windows%2011%20client%20pc%20Installation/images/launch-virtual-box.png)
 
+### Virtual Machine Name and OS
 
-   ### Virtual Machine Name and OS
-   
-   - Enter the name for Virtual machine e.g ***Win-Serv-2022*** 
-   - Leave VM folder as the defaults
-   - ISO image : Navigate to where the Win-Serv-2022 was downloaded to
-   - uncheck unintended install
-   
-   
-   ![vm-name](/windows%2011%20client%20pc%20Installation/images/vm-name.png)
+- Enter a name for the virtual machine, for example Win-Serv-2022.
+- Leave the VM folder at the default setting.
+- Select the Windows Server 2022 ISO you downloaded.
+- Leave unattended install unchecked unless you specifically want it enabled.
 
-   ### Specify Virtual Hardware
-   
-   - Set the base memory (RAM) to 6gb
-   - Set the CPU to 2 cores
-   
-![vm-memory](/windows%2011%20client%20pc%20Installation/images/vm-memory.png)
+![VM name](/windows%2011%20client%20pc%20Installation/images/vm-name.png)
 
-   ### Specify virtual Hard disk
-   
-   - Set disk size to 80gb or more
+### Specify Virtual Hardware
 
-![VDI](/windows%2011%20client%20pc%20Installation/images/VDi-customization.png)
+- Set the base memory (RAM) to 6 GB.
+- Set the CPU to 2 cores.
 
-- Click on finish,You should see the VM
-- click on start
+![VM memory](/windows%2011%20client%20pc%20Installation/images/vm-memory.png)
 
-![starting-the-machine](/windows%2011%20client%20pc%20Installation/images/starting-the-machine.png)
+### Specify Virtual Hard Disk
 
--While the machine is starting make sure to pay attention and ```press any key to boot into the CD or dvd```
+- Set the disk size to 80 GB or more.
+
+![VDI configuration](/windows%2011%20client%20pc%20Installation/images/VDi-customization.png)
+
+- Click Finish. You should see the VM in the VirtualBox manager.
+- Click Start.
+
+![Starting the machine](/windows%2011%20client%20pc%20Installation/images/starting-the-machine.png)
+
+- While the machine is starting, pay attention and press any key to boot from the CD/DVD.

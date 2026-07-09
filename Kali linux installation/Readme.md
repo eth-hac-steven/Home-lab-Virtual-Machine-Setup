@@ -1,55 +1,52 @@
-# Kali Linux installation on virtual box
+# Kali Linux Installation on VirtualBox
 
-## Step 1 : Required Tools
- - [Kali linux for virtualbox](https://www.kali.org/get-kali/#kali-virtual-machines)
+## Step 1: Required Tools
 
-### Step 2 : Installation
+- [Kali Linux for VirtualBox](https://www.kali.org/get-kali/#kali-virtual-machines)
 
-- Navigate to where you downloaded the ```kali-linux``` file to
-- Extract the file to get ```Kali-Linux-2026.1-virtualbox-amd64.7z```
-  
-- start your virtualbox
-- click on ```new```
-- Enter a VM name ```kali linux``` or whatever  you feel
-- Change OS to ```Linux```
-- Change the OS distribution to ```Debian```
+## Step 2: Installation
 
-![Kali Installation Step 1](kali%20installation%20images/Kali-installation-step-1.png)
+1. Navigate to the folder where you downloaded the Kali Linux archive.
+2. Extract the file to get the VirtualBox image, for example `Kali-Linux-2026.1-virtualbox-amd64.7z`.
+3. Open VirtualBox.
+4. Click New.
+5. Enter a VM name, such as Kali Linux.
+6. Set the operating system to Linux.
+7. Set the version to Debian.
 
+![Kali installation step 1](kali%20installation%20images/Kali-installation-step-1.png)
 
-- Click on specify virtual hardware
-- select/Enter 4gb
-- select 2 CPU
-  - Note : This depends on your system/PC/laptop
+8. Click Specify Virtual Hardware.
+9. Set the memory to 4 GB.
+10. Set the CPU count to 2.
+    - Note: Adjust this based on your computer’s resources.
 
-![Kali Installation Step 1](kali%20installation%20images/specify-virtual%20hardware.png)
-  
-- Click on specify virtual hard disk file
-- Select ```use an existing virtual hard disk```
-- Click on the ```folder``` on the right hand side of the screen
-- Click on ```add```
+![Kali installation step 1](kali%20installation%20images/specify-virtual%20hardware.png)
 
+11. Click Specify Virtual Hard Disk File.
+12. Select Use an Existing Virtual Hard Disk.
+13. Click the folder icon on the right side of the screen.
+14. Click Add.
 
-![Kali Installation Step 2](kali%20installation%20images/kali-installation-step-2.png)
+![Kali installation step 2](kali%20installation%20images/kali-installation-step-2.png)
 
-- Navigate to where the extacted kali-linux file is 
-- open and search for the vdi file
- 
+15. Navigate to the extracted Kali Linux files.
+16. Open the folder and select the VDI file.
 
-![Kali Installation Step 3](kali%20installation%20images/kali-installation-step-3.png)
+![Kali installation step 3](kali%20installation%20images/kali-installation-step-3.png)
 
-- click on open 
-- then click on choose
-- Kali linux should automatically appear in virtual box
+17. Click Open.
+18. Click Choose.
+19. Kali Linux should now appear in VirtualBox.
 
 ### Login Details
- - Username : Kali
- - Password : Kali
 
- With this  kali has been installed on virtual box.
+- Username: Kali
+- Password: Kali
 
- ### OR 
+With this, Kali Linux has been installed on VirtualBox.
 
- After extracing the  kali-linux file, then double click the the Vdi file  and kali should  open in virtual box as if installed very easy :).
- then login 😂
+### Alternative Method
+
+After extracting the Kali Linux files, you can double-click the VDI file and it should open in VirtualBox automatically. Then log in with the credentials above.
 

@@ -1,146 +1,141 @@
 # Captive Portal Setup
 
-A Captive portal is an important part of Network access control in an Enterprise environment. Users connecting to the network need to authorize with credentials like username and password or voucher codes to access network services.
+A captive portal is an important part of network access control in an enterprise environment. Users who connect to the network must authenticate with credentials such as a username, password, or voucher code before they can access network services.
 
 ---
-### Prerequisites  
+
+## Prerequisites
 
 - pfSense installed
 - pfSense VLAN created
 
-### Set-up 
+## Setup
 
-- Login to your pfSense dashboard
-- Click on the menu 
-- Click on ```Service```
-- Click on ```Captive Portal```
+1. Log in to your pfSense dashboard.
+2. Click the menu.
+3. Click Services.
+4. Click Captive Portal.
 
 ![pfSense Services menu with Captive Portal option highlighted](./images/THcon-Captive-portal-config-pt1.png)
 
-- Click on Add 
+5. Click Add.
 
 ![Captive Portal zones list with Add button](./images/THcon-Captive-portal-config-pt2.png)
 
-- Enter a Zone name eg Human_Res
-- Enter a Zone Description eg Zone for Human-Res staff
-- Click ```Save and Continue```
+6. Enter a zone name, for example Human_Res.
+7. Enter a zone description, for example Zone for Human-Res staff.
+8. Click Save and Continue.
 
-![Captive Portal zone creation form with name and description fields](./images/THcon-Captive-portal-config-pt3(zozne-name).png) 
+![Captive Portal zone creation form with name and description fields](./images/THcon-Captive-portal-config-pt3(zozne-name).png)
 
-- Check "Enable Captive Portal"
-- In Interface, select "HumanRes"
+9. Check Enable Captive Portal.
+10. In Interface, select HumanRes.
 
-PS
-- Also do this for the LAN interface you are currently connected to.
+> Note: Repeat this process for the LAN interface you are currently connected to.
 
-pfSense has done a good job in telling us what each feature does. Remember that Enterprise environments differ, so what you are doing should suit yours.
+pfSense provides clear descriptions for each option. Because enterprise environments vary, adjust the settings to suit your environment.
 
 ![Captive Portal settings with Enable option and HumanRes interface selected](./images/THcon-Captive-portal-config-pt3-enabing-interface.png)
 
-- Set Idle Timeout: 30 
-- Check "Logout Pop-up Window"
-- After Authentication URL: https://www.google.com
-- Check "Preserve User Database"
-- Leave Concurrent Connection as is
-- Check "Enable Per-user Bandwidth Restriction"
-- Set Default Download: 1024kbit/s (aka 1mbps)
-- Set Default Upload: 1024kbit/s (aka 1mbps)
-- Leave the Authentication Method as is 
-- Select "Local Database" for Authentication Server
-- Select "Local Database" for Secondary Authentication Server
-- Click on Save
-- Repeat for all the VLAN segments
+11. Set Idle Timeout to 30.
+12. Check Logout Popup Window.
+13. Set After Authentication URL to https://www.google.com.
+14. Check Preserve User Database.
+15. Leave Concurrent Connection at the default value.
+16. Check Enable Per-user Bandwidth Restriction.
+17. Set Default Download to 1024 kbit/s (about 1 Mbps).
+18. Set Default Upload to 1024 kbit/s (about 1 Mbps).
+19. Leave the Authentication Method as the default.
+20. Select Local Database for the Authentication Server.
+21. Select Local Database for the Secondary Authentication Server.
+22. Click Save.
+23. Repeat the process for each VLAN segment.
 
 ![Captive Portal zones overview showing all configured zones](./images/THcon-Captive-portal-Zones.png)
 
-### Creating User Accounts for the Different Segments
+## Creating User Accounts for Different Segments
 
-- Click on the menu
-- Click on System
-- Click on User Manager
+1. Click the menu.
+2. Click System.
+3. Click User Manager.
 
 ![System menu with User Manager option selected](./images/THcon-Captive-portal-user-config.png)
 
-First we create groups 
+### Create Groups
 
-- Click on ```Groups```
-   - Groups simply help to apply configs to all user added to this group instead of doing it one by one
-- Click on ```Add```
+1. Click Groups.
+   - Groups help apply configuration settings to all users in the group instead of configuring each user individually.
+2. Click Add.
 
-![User Manager interface showing Groups tab with Add button](./images/THcon-Captive-portal-user-config-pt2.png) 
+![User Manager interface showing Groups tab with Add button](./images/THcon-Captive-portal-user-config-pt2.png)
 
-- Enter a Group Name
-- Enter a Description
+3. Enter a group name.
+4. Enter a description.
 
-![Group creation form with name and description fields](./images/THcon-Captive-portal-user-config-pt3.png) 
+![Group creation form with name and description fields](./images/THcon-Captive-portal-user-config-pt3.png)
 
+5. In the Assigned Privileges section, click Add.
+   - This is important. Without it, the accounts you create may be denied access or rejected.
+6. Select User-Service: Captive Portal.
 
-- In the assigned privilegedes section
-- click on Add
-  - this is important, without this the user accounts created would be denied access and or rejected
-- select User-Service : Captive Portal
+![Assigning privileges to the different groups](./images/THcon-Captive-portal-Group-privilegdes.png)
 
-![Assiginng privilegedes to the different groups](./images/THcon-Captive-portal-Group-privilegdes.png)
-
-- click on Save
-
-- Do this for all others
+7. Click Save.
+8. Repeat this for each additional group.
 
 ![Multiple user groups displayed in the Groups list](./images/THcon-Captive-portal-user-config-pt4.png)
 
-Now let's create user accounts for users in our Enterprise:
+Example users:
 - Victoria Dane - Accounting
 - Doris Madison - Human-Res
 - Tolu Anderson - Underwriter
 
-### Creating User Accounts
+## Creating User Accounts
 
-- Click on User
-- Click on Add
-- Enter Username
-- Enter Password
-- Enter Full Name
+1. Click User.
+2. Click Add.
+3. Enter a username.
+4. Enter a password.
+5. Enter the full name.
 
 ![User account creation form with username, password, and full name fields](./images/THcon-Captive-portal-user-account-creation.png)
 
-
-Make sure to add the user as a member of the right groups
-
-- By selecting it and clicking on "Move to Members List"
+Make sure to add each user to the correct group by selecting the group and clicking Move to Members List.
 
 ![User group assignment interface showing available and member groups](./images/THcon-Captive-portal-user-account-creation-pt2.png)
 
-- And repeat for the other users
+Repeat this for the other users.
 
 ![User account list showing all created user accounts with their assigned groups](./images/THcon-Captive-portal-user-account-display.png)
 
-With all that done you should see this appear in  your browser  
+When everything is configured, you should see the captive portal page in your browser.
 
-![PFsense defualt Captive-portal page](./images/captive-portal-page.png)
+![pfSense default captive portal page](./images/captive-portal-page.png)
 
-### Confirmation
+## Confirmation
 
- Now lets Test the user account created, using anyone of the authenticatin methods 
+Test the user account using one of the authentication methods.
 
- #### Before login
+### Before Login
 
-![Captive-portal-before-login](./images/THcon-Captive-portal-before-login.png)
+![Captive portal before login](./images/THcon-Captive-portal-before-login.png)
 
- #### After login
+### After Login
 
-![Captive-portal-after-login](./images/THcon-Captive-portal-after-login.png)
+![Captive portal after login](./images/THcon-Captive-portal-after-login.png)
 
- you see the logout pop up windows
+You should see the logout popup window.
 
- #### Captive portal  Access logs
+### Captive Portal Access Logs
 
- - Click on the menu 
- - click on status 
- - click on captive portal 
- - selct the zone
- - you see who is logged in 
+1. Click the menu.
+2. Click Status.
+3. Click Captive Portal.
+4. Select the zone.
+5. Review the active users.
 
-![success-login](./images/success-login.png)  
+![Success login](./images/success-login.png)
 
- #### Note 
- This is the Default captive portal on pfsense, it does the job but its not custom,[check here](https://github.com/eth-hac-steven/Fortify-Continuum-Network-infrastructure/tree/main/Fortify%20Continuum%20Captive-Portal) for a custom setup.
+### Note
+
+This is the default captive portal on pfSense. It works well for basic use, but it is not custom. For a custom setup, see [this repository](https://github.com/eth-hac-steven/Fortify-Continuum-Network-infrastructure/tree/main/Fortify%20Continuum%20Captive-Portal).

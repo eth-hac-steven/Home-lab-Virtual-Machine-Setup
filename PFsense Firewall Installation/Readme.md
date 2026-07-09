@@ -55,13 +55,13 @@
 - click on ```Adapter 2```
 - click on ```Enable Network Adapter```
 
-![Network-adpater](/PFsense%20Firewall%20Installation/images/Screenshot%202026-06-15%20195108.png)
+![Network-adapter](/PFsense%20Firewall%20Installation/images/Screenshot%202026-06-15%20195108.png)
 
 - change the ```Attached to ``` Internal Network
   - This Internal network act as layer 2 switch for the device that will be on this network.
 - Enter a name of Choice or stick to the Default.
 
-![etwork](/PFsense%20Firewall%20Installation/images/internal%20network.png)
+![Network](/PFsense%20Firewall%20Installation/images/internal%20network.png)
 
 - click on okay
 - click on start
@@ -69,21 +69,21 @@
 ### Set-up 
  After starting the machine should see the this page
 
- ![netgate-installer](/PFsense%20Firewall%20Installation/images/Netgate-installer.png)
+ ![Netgate-installer](/PFsense%20Firewall%20Installation/images/Netgate-installer.png)
 
 - Click Accept
 
 ![Welcome](/PFsense%20Firewall%20Installation/images/welcome-page.png)
 
 - Select install
-- Clck ok
+- Click ok
 
 ![click-on-okay](/PFsense%20Firewall%20Installation/images/click-ok.png)
 
 - click ok
 
-### Selecing a WAN interface 
-  A WAN(wide Area Netowrk) interface is required to be able to recieve and send .
+### Selecting a WAN interface 
+  A WAN(wide Area Network) interface is required to be able to receive and send .
 
 - select ```em0```
 - click ok
@@ -96,11 +96,11 @@
  Leave as Default 
  - click ok
 
- - ***interface mode : DCHP(client)*** : This was set because to the ISP aka my Router assigns IP dynamically , if set to static this would cause a collision  in the future.
+ - ***interface mode : DHCP(client)*** : This was set because to the ISP aka my Router assigns IP dynamically , if set to static this would cause a collision  in the future.
      
 
-### Selecing a WAN interface 
-  The LAN(Local Area Netowrk) interface is required  for System on the internal Network to be able to access the internet.
+### Selecting a WAN interface 
+  The LAN(Local Area Network) interface is required  for System on the internal Network to be able to access the internet.
 
 ![LAN network Setup ](/PFsense%20Firewall%20Installation/images/image-2.png)
 

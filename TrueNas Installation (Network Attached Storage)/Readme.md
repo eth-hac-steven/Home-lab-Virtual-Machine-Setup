@@ -1,76 +1,74 @@
+# TrueNAS Installation
 
-# TrueNas Installation
+![TrueNAS](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-4.png)
 
-![TrueNas](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-4.png)
+## Description
 
-### Description
-   True-NAS(Network attached storage) is a centralized storage medium that allows use to be able to share and store files on the network.
+TrueNAS is a centralized storage solution that allows you to share and store files on the network.
 
-### Requirements
- Download it from the offical site at
-- [True-NAS iso ](https://www.truenas.com/download/)
+## Requirements
 
-or From 
+Download it from the official site:
 
-OSboxes
-- [True-NAS iso for Virtual-box](https://www.osboxes.org/truenas/)
+- [TrueNAS ISO](https://www.truenas.com/download/)
 
-i will be installing from OSboxes
+Or from OSboxes:
 
-### Installation 
+- [TrueNAS ISO for VirtualBox](https://www.osboxes.org/truenas/)
 
-- Launch virtualbox
-- click on New
+This guide uses the OSboxes image.
+
+## Installation
+
+1. Launch VirtualBox.
+2. Click New.
 
 ### Virtual Machine Name and OS
-   
-   - Enter the name for Virtual machine e.g ***True NAS*** 
-   - Leave VM folder as the defaults
-   - set the OS to BSD
-   
-   ![vm-name](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image.png)
 
-   ### Specify Virtual Hardware
-   
-   - Set the base memory (RAM) to 2gb
-   - Set the CPU to 1 cores
-   
-  ![base-memory](/PFsense%20Firewall%20Installation/images/base-memory.png)
+- Enter a name for the virtual machine, for example TrueNAS.
+- Leave the VM folder at the default setting.
+- Set the OS type to BSD.
 
-   ### virtual Hard disk
-   
-   - Check ```using an existing Virtual hard disk file```
-   - Click on the ```folder``` on the right hand side of the screen
-   - Click on ```add```
+![VM name](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image.png)
+
+### Specify Virtual Hardware
+
+- Set the base memory (RAM) to 2 GB.
+- Set the CPU to 1 core.
+
+![Base memory](/PFsense%20Firewall%20Installation/images/base-memory.png)
+
+### Virtual Hard Disk
+
+- Select Use an Existing Virtual Hard Disk File.
+- Click the folder icon on the right side of the screen.
+- Click Add.
 
 ![Virtual hard disk](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/Existing-vdi.png)
 
+- Navigate to the extracted TrueNAS files.
+- Click Open.
+- Click Choose.
 
-- Navigate to where the extacted  True Nas file is 
-- click on open
-- click on choose
+![Selection screen](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-1.png)
 
+- Click Finish. You should see the VM in the VirtualBox manager.
+- Click Settings.
 
-![click-on-setting](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-1.png)
+![Finished VM](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-2.png)
 
-- Click on finish,You should see the VM
-- Click on settings
+- Click Network.
+- Click Adapter 1.
+- Change Attached to to Internal Network.
+- Enter the same internal network name you used for pfSense.
 
-![finished-vm](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-2.png)
+![Network adapter](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-3.png)
 
-- click on ```Network```
-- click on ```Adapter 1```
-- change the ```Attached to ``` Internal Network
-- Enter the name of the same internal network in PFsense.
-
-![Network-adpater](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-3.png)
-
-
-- click on okay
-- click on start
+- Click OK.
+- Click Start.
 
 ### Done
 
-![installation-complete](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-5.png)
+![Installation complete](/TrueNas%20Installation%20(Network%20Attached%20Storage)/images/image-5.png)
 
-- To access this NAS use a systein the same internal network.
+To access this NAS, use a system that is connected to the same internal network.

@@ -1,86 +1,83 @@
 # Windows 11 Client Installation
 
-## Description  
-  
-The window 11 client system is a very important vm for this homelab, as it allows us to simulate a users view on this network and provides and consequence free device for various configuration
+## Description
+
+The Windows 11 client system is an important VM for this homelab. It allows you to simulate a user’s view of the network and provides a safe environment for testing and troubleshooting.
 
 ## Requirements
 
-- [Windows 11 iso](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
-   - Download the LTSC version
-
+- [Windows 11 ISO](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
+  - Download the LTSC version if required.
 
 ## Installation
 
-- launch Virtual box
-- click on New
+1. Launch VirtualBox.
+2. Click New.
 
-![installation-begins](/windows%2011%20client%20pc%20Installation/images/launch-virtual-box.png)
+![Launch VirtualBox](/windows%2011%20client%20pc%20Installation/images/launch-virtual-box.png)
 
+### Virtual Machine Name and OS
 
-   ### Virtual Machine Name and OS
-   
-   - Enter the name for Virtual machine e.g ***Win 11*** 
-   - Leave VM folder as the defaults
-   - ISO image : Navigate to where the Win 11 iso was downloaded to
-   - uncheck unintended install
-   
-   
-   ![vm-name](/windows%2011%20client%20pc%20Installation/images/vm-name.png)
+- Enter a name for the virtual machine, for example Win 11.
+- Leave the VM folder at the default setting.
+- Select the Windows 11 ISO you downloaded.
+- Leave the unattended install option unchecked unless you specifically want it enabled.
 
-   ### Specify Virtual Hardware
-   
-   - Set the base memory (RAM) to 4gb
-   - Set the CPU to 2 cores
-   
-![vm-memory](/windows%2011%20client%20pc%20Installation/images/vm-memory.png)
+![VM name](/windows%2011%20client%20pc%20Installation/images/vm-name.png)
 
-   ### Specify virtual Hard disk
-   
-   - Set disk size to 80gb or more
+### Specify Virtual Hardware
 
-![VDI](/windows%2011%20client%20pc%20Installation/images/VDi-customization.png)
+- Set the base memory (RAM) to 4 GB.
+- Set the CPU to 2 cores.
 
-- Click on finish,You should see the VM
-- click on start
+![VM memory](/windows%2011%20client%20pc%20Installation/images/vm-memory.png)
 
-![starting-the-machine](/windows%2011%20client%20pc%20Installation/images/starting-the-machine.png)
+### Specify Virtual Hard Disk
 
--While the machine is starting make sure to pay attention and ```PRESS ANY KEY TO BOOT INTO CD OR DVD```
+- Set the disk size to 80 GB or more.
 
-### Windows 11 setup
+![VDI configuration](/windows%2011%20client%20pc%20Installation/images/VDi-customization.png)
 
- The VM should boot up and display the win 11 setup wizard
+- Click Finish. You should see the VM in the VirtualBox manager.
+- Click Start.
 
- - Select the language and Time of your choice
+![Starting the machine](/windows%2011%20client%20pc%20Installation/images/starting-the-machine.png)
 
-![setup wizard](/windows%2011%20client%20pc%20Installation/images/win-11-setup.png)
+- While the machine is starting, pay attention and press any key to boot from the CD/DVD.
 
- - click Next
- - Select the keyboard format.
+### Windows 11 Setup
 
-![keyboard format](/windows%2011%20client%20pc%20Installation/images/keybpard-setting.png)
+The VM should boot into the Windows 11 setup wizard.
 
- - click Next
- - Select a setup option (Install Windows 11)
+- Select your preferred language and time settings.
 
-![setup-option](/windows%2011%20client%20pc%20Installation/images//setup-option.png)
+![Setup wizard](/windows%2011%20client%20pc%20Installation/images/win-11-setup.png)
 
- - Check the " i agree with ....."
- - Click Next
+- Click Next.
+- Select the keyboard layout.
 
-![terms and condition](/windows%2011%20client%20pc%20Installation/images/terms-and-conditions.png)
+![Keyboard layout](/windows%2011%20client%20pc%20Installation/images/keybpard-setting.png)
 
- - Click Accept
+- Click Next.
+- Select the setup option to install Windows 11.
 
-![drive-allocation](/windows%2011%20client%20pc%20Installation/images/drive-allocation.png)
+![Setup option](/windows%2011%20client%20pc%20Installation/images/setup-option.png)
 
- - click Next
+- Accept the license terms.
+- Click Next.
 
- your pc will be checked and be made ready
+![Terms and conditions](/windows%2011%20client%20pc%20Installation/images/terms-and-conditions.png)
 
- ![installation-begins](/windows%2011%20client%20pc%20Installation/images/ready-to-install.png)
+- Click Accept.
 
-- click Install
+![Drive allocation](/windows%2011%20client%20pc%20Installation/images/drive-allocation.png)
 
- ![installation-begins](/windows%2011%20client%20pc%20Installation/images/installing-begins.png)
+- Click Next.
+
+The system will check your configuration and prepare the installation.
+
+![Ready to install](/windows%2011%20client%20pc%20Installation/images/ready-to-install.png)
+
+- Click Install.
+
+![Installation begins](/windows%2011%20client%20pc%20Installation/images/installing-begins.png)
