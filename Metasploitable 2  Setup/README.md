@@ -23,7 +23,7 @@ This virtual machine (VM) is compatible with VMWare, VirtualBox, and other commo
    - Name the V-machine e.g Metasploitable-2
    - Select Linux as the OS
     
-  ![Ms2-setup1](Ms%202setup.png)
+  ![Ms2-setup1](/Ms2-set-up.png)
 
     - Click on "Specify on virtual Disk"
     - Select "Use an Existing Virtual Hard disk"
@@ -34,7 +34,7 @@ This virtual machine (VM) is compatible with VMWare, VirtualBox, and other commo
     - click on "Choose"
     - Click on "Finish"
     
-  ![Ms2-setup2](Ms%202setup2.png)
+  ![Ms2-setup2](/Ms2-set-up2.png)
 
 - Step-4 : Networking Setup
 
@@ -49,7 +49,7 @@ This virtual machine (VM) is compatible with VMWare, VirtualBox, and other commo
    - Enable DHCP
    - click on apply
 
-  ![Ms2-setup2](Ms%202setup2.png)
+  ![Ms2-set-up3](/Ms2-set-up3.png)
    
   Now on the Virtual Machine 
   
@@ -62,7 +62,7 @@ This virtual machine (VM) is compatible with VMWare, VirtualBox, and other commo
    - Click on "ok"
    - Do the same for Kali-linux
 
-  ![Ms2-setup2](Ms%202setup2.png)
+  ![Ms2-setup4](/Ms2-set-up4.png)
    
   With this Metasploitable 2 has been setup  and is on the same network with Kali to test check the IP s of both Machines
    
